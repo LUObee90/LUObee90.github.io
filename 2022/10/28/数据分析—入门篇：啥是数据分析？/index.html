@@ -1,0 +1,212 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>戴你玩转数据分析第一章 | 罗密蜂</title><meta name="keywords" content="数据分析教程,笔记"><meta name="author" content="罗密蜂"><meta name="copyright" content="罗密蜂"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="B站 戴师兄数据分析的教程">
+<meta property="og:type" content="article">
+<meta property="og:title" content="戴你玩转数据分析第一章">
+<meta property="og:url" content="http://luobee.xyz/2022/10/28/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E2%80%94%E5%85%A5%E9%97%A8%E7%AF%87%EF%BC%9A%E5%95%A5%E6%98%AF%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%9F/index.html">
+<meta property="og:site_name" content="罗密蜂">
+<meta property="og:description" content="B站 戴师兄数据分析的教程">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+<meta property="article:published_time" content="2022-10-28T10:40:26.000Z">
+<meta property="article:modified_time" content="2022-10-31T13:45:28.510Z">
+<meta property="article:author" content="罗密蜂">
+<meta property="article:tag" content="数据分析教程">
+<meta property="article:tag" content="笔记">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><link rel="shortcut icon" href="/img/16.jpeg"><link rel="canonical" href="http://luobee.xyz/2022/10/28/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E2%80%94%E5%85%A5%E9%97%A8%E7%AF%87%EF%BC%9A%E5%95%A5%E6%98%AF%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%9F/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: {"limitDay":400,"position":"top","messagePrev":"It has been","messageNext":"days since the last update, the content of the article may be outdated."},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":200},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"作者: 罗密蜂","link":"链接: ","source":"来源: 罗密蜂","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: true,
+  islazyload: true,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '戴你玩转数据分析第一章',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-10-31 21:45:28'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="css/mycss.css"><meta name="generator" content="Hexo 5.4.2"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/8.jpeg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">27</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">13</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">15</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa-solid fa-bars"></i><span> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 娱乐</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/video/"><i class="fa-fw fas fa-video"></i><span> 视频</span></a></li><li><a class="site-page child" href="/fiction/"><i class="fa-fw fa-brands fa-readme"></i><span> 小说</span></a></li><li><a class="site-page child" href="/artitalk/"><i class="fa-fw fa-duotone fa-feather"></i><span> 说说&amp;摘抄</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></div><div class="menus_item"><a class="site-page" href="/messageboard/"><i class="fa-fw fa-solid fa-message"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/resources/"><i class="fa-fw fa-solid fa-paper-plane"></i><span> 导航</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">罗密蜂</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa-solid fa-bars"></i><span> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 娱乐</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/video/"><i class="fa-fw fas fa-video"></i><span> 视频</span></a></li><li><a class="site-page child" href="/fiction/"><i class="fa-fw fa-brands fa-readme"></i><span> 小说</span></a></li><li><a class="site-page child" href="/artitalk/"><i class="fa-fw fa-duotone fa-feather"></i><span> 说说&amp;摘抄</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></div><div class="menus_item"><a class="site-page" href="/messageboard/"><i class="fa-fw fa-solid fa-message"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/resources/"><i class="fa-fw fa-solid fa-paper-plane"></i><span> 导航</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">戴你玩转数据分析第一章</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-10-28T10:40:26.000Z" title="发表于 2022-10-28 18:40:26">2022-10-28</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-10-31T13:45:28.510Z" title="更新于 2022-10-31 21:45:28">2022-10-31</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%95%99%E7%A8%8B/">数据分析教程</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="戴你玩转数据分析第一章"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="戴你玩转数据分析"><a href="#戴你玩转数据分析" class="headerlink" title="戴你玩转数据分析"></a>戴你玩转数据分析</h1><p><a target="_blank" rel="noopener" href="https://www.bilibili.com/cheese/play/ss738?bsource=link_copy">戴师兄数据分析课程3.0（付费）</a><br>链接：<a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1aR-n9f5xxlAlmrcx4qjFLw">https://pan.baidu.com/s/1aR-n9f5xxlAlmrcx4qjFLw</a> 提取码：31yn<br>注意：师兄希望大家都可以动手制作属于自己的项目作品，所以课程资料中不会为大家提供任何完成版的作品资料。如果在学习过程中有任何问题，可以直接在群里提问，不需要参考已经完成的作品哦。<br><strong>数据分析学习方法</strong></p>
+<p>互联网常见术语及指标飞书链接：<a target="_blank" rel="noopener" href="https://yrzu9y4st8.feishu.cn/mindnotes/bmncn0vI44u8B71EEaJ0u6fRyoh%E5%AF%86%E7%A0%81%EF%BC%9A0Btn">https://yrzu9y4st8.feishu.cn/mindnotes/bmncn0vI44u8B71EEaJ0u6fRyoh密码：0Btn</a></p>
+<p>2.2 Excel 课程及后续课程知识点飞书链接：<a target="_blank" rel="noopener" href="https://yrzu9y4st8.feishu.cn/mindnotes/bmncns7Gck8z9vVVikm9x5S0Wqc">https://yrzu9y4st8.feishu.cn/mindnotes/bmncns7Gck8z9vVVikm9x5S0Wqc</a>   密码：kR3A</p>
+<p><strong>优质数据来源<a target="_blank" rel="noopener" href="https://www.mubucm.com/doc/khgT_YAIc0">https://www.mubucm.com/doc/khgT_YAIc0</a></strong></p>
+<h1 id="啥是数据分析？"><a href="#啥是数据分析？" class="headerlink" title="啥是数据分析？"></a>啥是数据分析？</h1><p><strong>基于量化的信息提升生产力，就是数据分析。</strong></p>
+<blockquote>
+<p>取数，做表<br>搭看板，写报告<br>做挖掘，建模型</p>
+</blockquote>
+<p><strong>数据团队分为：</strong><br>1.业务——为业务提供数据支持，基于数据优化业务<br>数据专员：职能单一，会SQL取数或者手动下载汇总数据，EXCEL处理数据，进行基础的数据支持，简单的图表和看板。<br>数据运营：设计业务流程，落地执行，一线的业务小伙伴，在业务上线前进行数据核算，业务执行后查看数据是否正常，进行诊断分析。<br><strong>数据分析师：提供数据支持，想办法实现业务想看的数据，进行诊断和优化策略。全面对比深入分析，长期观察问题，并深入思考，进行专题分析，取数分析解决业务问题。</strong></p>
+<p>2.开发——搭建数据平台，提供基础支持<br>数据产品经理：设计选择公司的数据产品，思考以怎么样的方案满足公司数据需求（有的公司也称为数据架构师）。<br>数据工程师：专攻数据库和各种数据产品开发维护的程序员，只提供数据，不分析数据（例如爬虫工作）。</p>
+<p>3.算法<br>算法优化师：调用已有模型，优化提高准确率<br>算法科学家：研发高性能模型，进行技术创新<br>算法工程师：优化模型，部署实施，基于数据训练模型，通过模型解决问题和自动化。</p>
+<hr>
+<h2 id="数据分析如何在企业发挥价值？"><a href="#数据分析如何在企业发挥价值？" class="headerlink" title="数据分析如何在企业发挥价值？"></a>数据分析如何在企业发挥价值？</h2><h3 id="一、企业到底又哪些问题需要数据分析去解决？"><a href="#一、企业到底又哪些问题需要数据分析去解决？" class="headerlink" title="一、企业到底又哪些问题需要数据分析去解决？"></a><strong>一、企业到底又哪些问题需要数据分析去解决？</strong></h3><p>1.是什么？——必备技能+基本功+解决复杂问题的基础<br>本质：用数据去量化企业当前的经营现状或者业务事实<br>具体：业务细节——数据——图表——业务到底发生了什么？<br>2.为什么？——必备技能+基本功+解决复杂问题的基础<br>具体：问题——原因——数据相关性——验证——有影响？<br>3.怎么做？——深入业务，从业经验3年以上的分析师<br>具体：行动策略——（老板）设计商业模式——（产品+运营）一起给出解决方案——（分析师）外部信息整合梳理+方案评估<br>分析师具体工作为：收集市场信息，预测市场规模，研究竞品数据，多视角分析优劣，数据实验。<br>4.做多少？——深入业务，从业经验3年以上的分析师<br>找方向：对抗未知<br>找多少：已有的方向方向上进行各种计算<br>业务目标——绩效方案——业务模型<br>目的：计算出使当前册罗投入产出比最高的过程参数。<br>用多少人？——花多少钱？——投入多少资源。涉及利益分配问题。</p>
+<h3 id="二、0-1年的分析师和职场人的必备技能——通过数据量化现状，并找到数据之间的关联性"><a href="#二、0-1年的分析师和职场人的必备技能——通过数据量化现状，并找到数据之间的关联性" class="headerlink" title="二、0-1年的分析师和职场人的必备技能——通过数据量化现状，并找到数据之间的关联性"></a><strong>二、0-1年的分析师和职场人的必备技能——通过数据量化现状，并找到数据之间的关联性</strong></h3><p>1.思考问题<br>确认问题：<br>（1）目的：目的越明确，答案质量就越高<br>（2）背景：因为——所以<br>（3）思路：我想——然后+谢谢<br>拆解问题：<br>（1）时间流程拆解法：某些流程或环节出现错误——导致营业额下降，拆解环节，深入分析。<br>量化问题：将想到的数据一个个转化为具体的表格格式并统计口径，数据格式（日期，字符串。数字）<br>2.分析数据<br>收集数据：<br>（1）内部数据：直接写SQL，从平台下载，提出数据需求（与生产环境同步，T+1更新）<br>（2）外部数据：各大网站和APP，手动下载、模拟操作、网页解析、数据抓包、请求API、爬虫<br>处理数据：脏数据——筛选+清洗+计算——干净数据<br>制作图表：标准数据——工具——图表（透视表和各种报表）——信息的汇总和突出<br>上传发布：Tableau发布报表——对问题有定位和答案<br>3.输出结论<br>一句话：原因<br>一幅图：对比</p>
+<hr>
+<h2 id="主流数据分析方法与框架使用"><a href="#主流数据分析方法与框架使用" class="headerlink" title="主流数据分析方法与框架使用"></a>主流数据分析方法与框架使用</h2><h3 id="五个数据分析领域的关键理论基础——数据分析的前提条件"><a href="#五个数据分析领域的关键理论基础——数据分析的前提条件" class="headerlink" title="五个数据分析领域的关键理论基础——数据分析的前提条件"></a>五个数据分析领域的关键理论基础——数据分析的前提条件</h3><p>1.大数定律：指大量重复某一实验时，最后的频率会无限接近于事件的概率（数据的样本量越大，预测和计算的概率就越准确）（小样本数据量失效）。若是遇到则有三条路选择<br>（1）逃避：跳槽，去业务成熟，数据量级更大的公司。<br>（2）主客观相结合：深入业务，从用户视角思考问题，广泛收集信息，不仅仅从数据得出结论。<br>（3）Carry全场：想方设法把公司的业务和数据建设搞上去，数据量级自然提升。<br>2.罗卡定律（罗卡交换定律）：凡有接触，必留痕迹。（用户在使用网站或者App的过程中必定会产生数据）<br>3.幸存者偏差：统计样本的覆盖会从很大程度上直接影响分析的结果。<br>（1）各种分析的对象，能取全量就取全量<br>（2）不能取全量则要选择最能代表总体特征的样本<br>（3）看别人的分析结果时，也要关注他时如何取样的。<br>4.辛普森悖论：两组分别讨论都满足某一性质的数据，一旦合并计算，就会得出完全相反的结论。（若是想得到正确的分析结论，首先保证分析的数据在同一量级下）<br>5.帕累托最优：有限的资源下，优化资源分配方式，就能让各方受益甚至满足的分析思路。</p>
+<h3 id="所有的分析框架和方法都可以概括为一个原则，四类方法"><a href="#所有的分析框架和方法都可以概括为一个原则，四类方法" class="headerlink" title="所有的分析框架和方法都可以概括为一个原则，四类方法"></a>所有的分析框架和方法都可以概括为一个原则，四类方法</h3><p>1.MECE法则：”相互独立、完全穷尽”，即所谓的 “无重复、无遗漏”。提升思考问题的全面度<br>2.时间流程法：根据时间顺序对问题进行拆解<br>（1）漏斗分析：经典AARRR模型（将用户接触产品的过程分为 获取，激活，留存，收益，传播），<br>（2）PDCA：Plan（计划），Do（执行），Check（检查），Act（处理）<br>（3）精益创业：根据想法快速构建产品，Idea—Data—Product<br>3.模型框架法：依靠内部优势、抓住外部机会<br>4.量化公式法：指标计算，进行拆解<br>5.穷尽要素法：将整体分为不同的构成部分</p>
+<h3 id="量化问题为数据"><a href="#量化问题为数据" class="headerlink" title="量化问题为数据"></a>量化问题为数据</h3><p>1.根据拆解的维度找到对应的数据指标<br>（1）属性：描述对象有哪些特征（以文本格式居多）<br>（2）绝对值：衡量一件事的最后结果<br>（3）转化率：衡量一个环节的完成度<br>2.经典场景如何应用<br>（1）业务诊断：拆解—量化—取数—分析<br>（2）业务增长：收集外部数据—估算市场空间—推算竞品规模—计算增长空间—确定增长目标—研究主流打法—设计增长策略—构建增长引擎</p>
+<hr>
+<h2 id="图文并茂的数据汇报与观点表达"><a href="#图文并茂的数据汇报与观点表达" class="headerlink" title="图文并茂的数据汇报与观点表达"></a>图文并茂的数据汇报与观点表达</h2><p><strong>数值型数据【度量】</strong>：一般是由数字祖成的变量，例如：成交金额、用户数、点击量、可以进行计算，并基于计算结果的大小映射到长度这类可视化的视觉图形上<br><strong>类别型数据【维度】</strong>：一般是由各种字符和分组标签组成，例如：用户ID、性别、注册渠道</p>
+<h3 id="什么是数据图表？"><a href="#什么是数据图表？" class="headerlink" title="什么是数据图表？"></a>什么是数据图表？</h3><p><strong>各种数据可视化工具，只是我们实现具体操作的可选项，各有优劣，选择最方便最高效的工具</strong><br><strong>工具为具体的场景服务</strong></p>
+<blockquote>
+<p>Excel: 小量级、一次性的数据处理<br>BI工具: 批量的数据读取与分析<br>Python: 复杂数据清洗、爬虫和算法建模</p>
+</blockquote>
+<h3 id="什么是数据表达？"><a href="#什么是数据表达？" class="headerlink" title="什么是数据表达？"></a>什么是数据表达？</h3><p><strong>数据表达</strong>：基于数据化的表、图、文说明事实表达观点。<br><strong>问题一</strong>、数据表达的目的是什么？</p>
+<blockquote>
+<p>借助数据、认知业务<br>口说无凭、数据为证<br>说明现状、阐述事实<br>说服他人、表达观点<br>准确的知道到底发生了什么？</p>
+</blockquote>
+<p><strong>问题二</strong>、为什么要基于数据表达？七大表达方式不行吗？</p>
+<blockquote>
+<p>数据有 <strong>客观</strong> 、<strong>量化</strong> 两大属性<br>基于数据表现能最大程度地统一人与人之间地认知<br>数据进行计算拓展，进一步挖掘数据背后的信息<br>间言：<strong>高效、直观、客观</strong></p>
+</blockquote>
+<p><strong>问题三</strong>、如何基于图表进行优质的数据表达？</p>
+<blockquote>
+<p>1.基于图文的对话沟通<br>2.基于PPT的汇报总结<br>3.基于文档的专业分析</p>
+</blockquote>
+<p><strong>表达格式： 观点 + 数据 + 补充信息 + 图表</strong></p>
+<p><strong>三步操作完成专业表达</strong></p>
+<p><strong>一、提炼文字观点</strong></p>
+<blockquote>
+<p>1.打破认知<br>2.吸引人的好奇心</p>
+</blockquote>
+<p><strong>二、制作完善图表</strong></p>
+<blockquote>
+<p>1.根据问题和观点选择合适的图表类型<br>2.为图表准备数据<br>3.借助工具制作图表<br>4.优化视觉图形组合</p>
+</blockquote>
+<p><strong>三、展示关键证据</strong></p>
+<blockquote>
+<p>1.时间日期必须准确<br>2.简化数字——合适量级<br>3.少用术语<br>4.直接明了、说人话<br>例如：业务细节——数据——图表——业务到底发生了什么？</p>
+</blockquote>
+<h3 id="如何借助各种视觉图形呈现数据？"><a href="#如何借助各种视觉图形呈现数据？" class="headerlink" title="如何借助各种视觉图形呈现数据？"></a>如何借助各种视觉图形呈现数据？</h3><p><strong>基础图表使用情况</strong>：<br><strong>规模——条形图</strong><br><strong>占比——饼图+环形图+树图</strong><br><strong>趋势——折线图</strong><br><strong>关系——散点图</strong><br><strong>分布——直方图+地图</strong></p>
+<h2 id="如何正确地学习和使用数据分析"><a href="#如何正确地学习和使用数据分析" class="headerlink" title="如何正确地学习和使用数据分析"></a>如何正确地学习和使用数据分析</h2><h3 id="如何正确学习数据分析？"><a href="#如何正确学习数据分析？" class="headerlink" title="如何正确学习数据分析？"></a>如何正确学习数据分析？</h3><p><strong>1.通过正确的学习方式提升只是储备和能力是解决一切问题的最好方式！！！</strong><br><strong>2.搭建属于自己的知识体系框架</strong></p>
+<blockquote>
+<p>充分理解别人的框架<br>自己的框架能不能解决问题？<br>果断学习新知识去解决问题<br>学会后归纳到自己的框架里<br>重新搭建并完善自己的框架</p>
+</blockquote>
+<p><strong>3.解决问题的过程，就是成长的机会</strong><br>如果在职：根据工作需要选择你最需要或者感兴趣的章节学习，快速形成战斗力<br>如果没有工作场景：先学一个实战项目，快速形成战斗力，然后查缺补漏。<br><strong>4.先学用得上的</strong></p>
+<h3 id="如何正确使用数据分析？"><a href="#如何正确使用数据分析？" class="headerlink" title="如何正确使用数据分析？"></a>如何正确使用数据分析？</h3><p><strong>1.数据分析永远知识一门辅助技能</strong><br>能：量化业务、发现问题、算出市场规模、判断竞品动作、知道业务要做多少又改怎么做<br>但：永远无法代替业务的执行过程</p>
+<p><strong>2.进行数据分析时 自问</strong></p>
+<blockquote>
+<p>1.输出的结论能不能被理解<br>2.做出的图表够不够直观<br>3.给出的策略可不可被执行</p>
+</blockquote>
+<h3 id="数据分析价值如何最大化？"><a href="#数据分析价值如何最大化？" class="headerlink" title="数据分析价值如何最大化？"></a>数据分析价值如何最大化？</h3><p><strong>数据工具人只是数据分析师职业发展的第一步</strong><br>借助数据分析为我们带来更大的职业发展空间和跟过选择的机会。<br>没有成为数据分析师：它能体现你的综合能力，更是你能管理大规模业务业务的有效证明<br>已经成为数据领域的从业者：它能帮助你快速晋升，成为业务线的数据领导者。</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="http://luobee.xyz">罗密蜂</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://luobee.xyz/2022/10/28/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E2%80%94%E5%85%A5%E9%97%A8%E7%AF%87%EF%BC%9A%E5%95%A5%E6%98%AF%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%9F/">http://luobee.xyz/2022/10/28/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E2%80%94%E5%85%A5%E9%97%A8%E7%AF%87%EF%BC%9A%E5%95%A5%E6%98%AF%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%9F/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://luobee.xyz" target="_blank">罗密蜂</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%95%99%E7%A8%8B/">数据分析教程</a><a class="post-meta__tags" href="/tags/%E7%AC%94%E8%AE%B0/">笔记</a></div><div class="post_share"><div class="social-share" data-image="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/img/wechat.jpg" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/wechat.jpg" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="/img/alipay.jpg" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/alipay.jpg" alt="alipay"/></a><div class="post-qr-code-desc">alipay</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2022/10/26/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E8%87%AA%E5%AD%A6%E8%AF%BE%E7%A8%8B1.0/"><img class="prev-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">戴师兄自学数据分析课程1.0</div></div></a></div><div class="next-post pull-right"><a href="/2022/10/28/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E2%80%94%E5%85%A5%E9%97%A8%E7%AF%87%EF%BC%9AExcel/"><img class="next-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">数据分析—入门篇：啥是数据分析？</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2022/10/28/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E2%80%94%E5%85%A5%E9%97%A8%E7%AF%87%EF%BC%9ASQL%20/" title="戴你玩转数据分析第四章"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-10-28</div><div class="title">戴你玩转数据分析第四章</div></div></a></div><div><a href="/2022/10/28/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E2%80%94%E5%85%A5%E9%97%A8%E7%AF%87%EF%BC%9APython%20/" title="戴你玩转数据分析第五章"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-10-28</div><div class="title">戴你玩转数据分析第五章</div></div></a></div><div><a href="/2022/10/28/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E2%80%94%E5%85%A5%E9%97%A8%E7%AF%87%EF%BC%9ATableau%20/" title="戴你玩转数据分析第三章"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-10-28</div><div class="title">戴你玩转数据分析第三章</div></div></a></div><div><a href="/2022/11/10/Python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%9A%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85%E4%B8%8E%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/" title="Python零基础进阶数据分析——环境安装与基础语法"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://s1.ax1x.com/2022/11/10/zpjxsK.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-11-10</div><div class="title">Python零基础进阶数据分析——环境安装与基础语法</div></div></a></div><div><a href="/2022/11/10/Python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%9A%E5%AE%9E%E6%88%98%E6%8A%80%E8%83%BD%E6%89%A9%E5%B1%95/" title="Python零基础进阶数据分析——实战技能扩展"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://s1.ax1x.com/2022/11/10/zpjxsK.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-11-10</div><div class="title">Python零基础进阶数据分析——实战技能扩展</div></div></a></div><div><a href="/2022/11/10/Python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%9A%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/" title="Python零基础进阶数据分析——数据可视化"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://s1.ax1x.com/2022/11/10/zpjxsK.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-11-10</div><div class="title">Python零基础进阶数据分析——数据可视化</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/8.jpeg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">罗密蜂</div><div class="author-info__description">数据分析 Python SQL SPSS Excel Tableau</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">27</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">13</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">15</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://luobee90.github.io/"><i class="fab fa-github"></i><span>LMF-mi蜂</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://luobee90.github.io/" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="https://space.bilibili.com/650616096?spm_id_from=333.1007.0.0" target="_blank" title="bilibili"><i class="fa-brands fa-bilibili"></i></a><a class="social-icon" href="tencent://AddContact/?fromId=45&amp;fromSubId=1&amp;subcmd=all&amp;uin=2986491937&amp;website=www.qtxml.cn" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">专注于分享数据分享领域知识，正在不断更新中</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%88%B4%E4%BD%A0%E7%8E%A9%E8%BD%AC%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90"><span class="toc-number">1.</span> <span class="toc-text">戴你玩转数据分析</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%95%A5%E6%98%AF%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%9F"><span class="toc-number">2.</span> <span class="toc-text">啥是数据分析？</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E5%A6%82%E4%BD%95%E5%9C%A8%E4%BC%81%E4%B8%9A%E5%8F%91%E6%8C%A5%E4%BB%B7%E5%80%BC%EF%BC%9F"><span class="toc-number">2.1.</span> <span class="toc-text">数据分析如何在企业发挥价值？</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E4%BC%81%E4%B8%9A%E5%88%B0%E5%BA%95%E5%8F%88%E5%93%AA%E4%BA%9B%E9%97%AE%E9%A2%98%E9%9C%80%E8%A6%81%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E5%8E%BB%E8%A7%A3%E5%86%B3%EF%BC%9F"><span class="toc-number">2.1.1.</span> <span class="toc-text">一、企业到底又哪些问题需要数据分析去解决？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8C%E3%80%810-1%E5%B9%B4%E7%9A%84%E5%88%86%E6%9E%90%E5%B8%88%E5%92%8C%E8%81%8C%E5%9C%BA%E4%BA%BA%E7%9A%84%E5%BF%85%E5%A4%87%E6%8A%80%E8%83%BD%E2%80%94%E2%80%94%E9%80%9A%E8%BF%87%E6%95%B0%E6%8D%AE%E9%87%8F%E5%8C%96%E7%8E%B0%E7%8A%B6%EF%BC%8C%E5%B9%B6%E6%89%BE%E5%88%B0%E6%95%B0%E6%8D%AE%E4%B9%8B%E9%97%B4%E7%9A%84%E5%85%B3%E8%81%94%E6%80%A7"><span class="toc-number">2.1.2.</span> <span class="toc-text">二、0-1年的分析师和职场人的必备技能——通过数据量化现状，并找到数据之间的关联性</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BB%E6%B5%81%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%96%B9%E6%B3%95%E4%B8%8E%E6%A1%86%E6%9E%B6%E4%BD%BF%E7%94%A8"><span class="toc-number">2.2.</span> <span class="toc-text">主流数据分析方法与框架使用</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%94%E4%B8%AA%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E9%A2%86%E5%9F%9F%E7%9A%84%E5%85%B3%E9%94%AE%E7%90%86%E8%AE%BA%E5%9F%BA%E7%A1%80%E2%80%94%E2%80%94%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E7%9A%84%E5%89%8D%E6%8F%90%E6%9D%A1%E4%BB%B6"><span class="toc-number">2.2.1.</span> <span class="toc-text">五个数据分析领域的关键理论基础——数据分析的前提条件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%89%80%E6%9C%89%E7%9A%84%E5%88%86%E6%9E%90%E6%A1%86%E6%9E%B6%E5%92%8C%E6%96%B9%E6%B3%95%E9%83%BD%E5%8F%AF%E4%BB%A5%E6%A6%82%E6%8B%AC%E4%B8%BA%E4%B8%80%E4%B8%AA%E5%8E%9F%E5%88%99%EF%BC%8C%E5%9B%9B%E7%B1%BB%E6%96%B9%E6%B3%95"><span class="toc-number">2.2.2.</span> <span class="toc-text">所有的分析框架和方法都可以概括为一个原则，四类方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%87%8F%E5%8C%96%E9%97%AE%E9%A2%98%E4%B8%BA%E6%95%B0%E6%8D%AE"><span class="toc-number">2.2.3.</span> <span class="toc-text">量化问题为数据</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%BE%E6%96%87%E5%B9%B6%E8%8C%82%E7%9A%84%E6%95%B0%E6%8D%AE%E6%B1%87%E6%8A%A5%E4%B8%8E%E8%A7%82%E7%82%B9%E8%A1%A8%E8%BE%BE"><span class="toc-number">2.3.</span> <span class="toc-text">图文并茂的数据汇报与观点表达</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E6%95%B0%E6%8D%AE%E5%9B%BE%E8%A1%A8%EF%BC%9F"><span class="toc-number">2.3.1.</span> <span class="toc-text">什么是数据图表？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E6%95%B0%E6%8D%AE%E8%A1%A8%E8%BE%BE%EF%BC%9F"><span class="toc-number">2.3.2.</span> <span class="toc-text">什么是数据表达？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E5%80%9F%E5%8A%A9%E5%90%84%E7%A7%8D%E8%A7%86%E8%A7%89%E5%9B%BE%E5%BD%A2%E5%91%88%E7%8E%B0%E6%95%B0%E6%8D%AE%EF%BC%9F"><span class="toc-number">2.3.3.</span> <span class="toc-text">如何借助各种视觉图形呈现数据？</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E6%AD%A3%E7%A1%AE%E5%9C%B0%E5%AD%A6%E4%B9%A0%E5%92%8C%E4%BD%BF%E7%94%A8%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90"><span class="toc-number">2.4.</span> <span class="toc-text">如何正确地学习和使用数据分析</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E6%AD%A3%E7%A1%AE%E5%AD%A6%E4%B9%A0%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%9F"><span class="toc-number">2.4.1.</span> <span class="toc-text">如何正确学习数据分析？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E6%AD%A3%E7%A1%AE%E4%BD%BF%E7%94%A8%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%9F"><span class="toc-number">2.4.2.</span> <span class="toc-text">如何正确使用数据分析？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E4%BB%B7%E5%80%BC%E5%A6%82%E4%BD%95%E6%9C%80%E5%A4%A7%E5%8C%96%EF%BC%9F"><span class="toc-number">2.4.3.</span> <span class="toc-text">数据分析价值如何最大化？</span></a></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2023/02/17/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E5%AE%9E%E6%88%98%EF%BC%9A%E5%85%B4%E8%B6%A3%E7%94%B5%E5%95%86%E7%94%A8%E6%88%B7%E6%88%90%E4%BA%A4%E5%95%86%E5%93%81%E5%88%86%E6%9E%90/" title="数据分析实战——兴趣电商用户成交商品分析"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="数据分析实战——兴趣电商用户成交商品分析"/></a><div class="content"><a class="title" href="/2023/02/17/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E5%AE%9E%E6%88%98%EF%BC%9A%E5%85%B4%E8%B6%A3%E7%94%B5%E5%95%86%E7%94%A8%E6%88%B7%E6%88%90%E4%BA%A4%E5%95%86%E5%93%81%E5%88%86%E6%9E%90/" title="数据分析实战——兴趣电商用户成交商品分析">数据分析实战——兴趣电商用户成交商品分析</a><time datetime="2023-02-17T10:21:06.000Z" title="发表于 2023-02-17 18:21:06">2023-02-17</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/12/26/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E5%AE%9E%E6%88%98%EF%BC%9AExcel+Tableau%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E5%B2%97%E4%BD%8D%E4%BF%A1%E6%81%AF%E5%88%86%E6%9E%90/" title="数据分析实战——Excel+Tableau数据分析岗位信息分析"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://s1.ax1x.com/2022/12/26/zx5wJ1.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="数据分析实战——Excel+Tableau数据分析岗位信息分析"/></a><div class="content"><a class="title" href="/2022/12/26/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E5%AE%9E%E6%88%98%EF%BC%9AExcel+Tableau%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E5%B2%97%E4%BD%8D%E4%BF%A1%E6%81%AF%E5%88%86%E6%9E%90/" title="数据分析实战——Excel+Tableau数据分析岗位信息分析">数据分析实战——Excel+Tableau数据分析岗位信息分析</a><time datetime="2022-12-26T11:12:38.000Z" title="发表于 2022-12-26 19:12:38">2022-12-26</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/11/13/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E5%AE%9E%E6%88%98%EF%BC%9A%E6%9C%AC%E5%9C%B0%E7%94%9F%E6%B4%BB%E5%A4%96%E5%8D%96%E9%97%A8%E5%BA%97%E7%BB%8F%E8%90%A5%E5%88%86%E6%9E%90/" title="数据分析实战——本地生活外卖门店经营分析"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://s1.ax1x.com/2022/11/14/zA0hB6.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="数据分析实战——本地生活外卖门店经营分析"/></a><div class="content"><a class="title" href="/2022/11/13/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E5%AE%9E%E6%88%98%EF%BC%9A%E6%9C%AC%E5%9C%B0%E7%94%9F%E6%B4%BB%E5%A4%96%E5%8D%96%E9%97%A8%E5%BA%97%E7%BB%8F%E8%90%A5%E5%88%86%E6%9E%90/" title="数据分析实战——本地生活外卖门店经营分析">数据分析实战——本地生活外卖门店经营分析</a><time datetime="2022-11-13T10:47:54.000Z" title="发表于 2022-11-13 18:47:54">2022-11-13</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/11/11/Python%E5%85%A8%E6%A0%88%E5%BC%80%E5%8F%91%EF%BC%9AKivy%20APP%E5%BA%94%E7%94%A8%E5%BC%80%E5%8F%91/" title="Python全栈开发——Kivy"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://s1.ax1x.com/2022/11/11/zCRJld.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Python全栈开发——Kivy"/></a><div class="content"><a class="title" href="/2022/11/11/Python%E5%85%A8%E6%A0%88%E5%BC%80%E5%8F%91%EF%BC%9AKivy%20APP%E5%BA%94%E7%94%A8%E5%BC%80%E5%8F%91/" title="Python全栈开发——Kivy">Python全栈开发——Kivy</a><time datetime="2022-11-11T07:40:01.000Z" title="发表于 2022-11-11 15:40:01">2022-11-11</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/11/10/Python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%9A%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/" title="Python零基础进阶数据分析——数据可视化"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://s1.ax1x.com/2022/11/10/zpjxsK.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Python零基础进阶数据分析——数据可视化"/></a><div class="content"><a class="title" href="/2022/11/10/Python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%9A%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/" title="Python零基础进阶数据分析——数据可视化">Python零基础进阶数据分析——数据可视化</a><time datetime="2022-11-10T07:39:39.000Z" title="发表于 2022-11-10 15:39:39">2022-11-10</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7')"><div id="footer-wrap"><div class="copyright">&copy;2022 - 2023 By 罗密蜂</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">欢迎来到我的博客，希望我的文章对你有所帮助</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><div class="js-pjax"></div><canvas class="fireworks" mobile="false"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/fireworks.min.js"></script><script defer="defer" id="fluttering_ribbon" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-fluttering-ribbon.min.js"></script><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="99" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-nest.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script id="click-show-text" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/click-show-text.min.js" data-mobile="false" data-text="I LOVE YOU" data-fontsize="15px" data-random="false" async="async"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
